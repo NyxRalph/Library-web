@@ -42,34 +42,26 @@
             <div class="header__description">
                
                    
-                    <h1>All<span class="purple"> Books</span></h1>
-                   
+                
             </div>
         </header> 
         <main id="books__main"> 
             <section>
                 <div class="container">
                     <div class="row">
-                        <!-- <h2 class="section__title books__header__title">All <span class="pu
-                            "> Books</span>
-                        </h2> -->
-                        <div class="book">
-                            <figure class="book__img--wrapper">
-                                <img class="book__img" src="./assests/img/bk2.jpg" alt="">
-                            </figure>
-                            <div class="book__title">
-                                Laws Of Human Natue
-                            </div>
-                            <div class="book__ratings">
-                                <i class="fas fa-star"></i>
-                                <i class="fas fa-star"></i>
-                                <i class="fas fa-star"></i>
-                                <i class="fas fa-star"></i>
-                                <i class="fas fa-star-half-alt"></i>
-                            </div>
-                            <div class="book__price">
-                                <span class="book__price--normal">$59.95</span> $14.95
-                            </div>
+                        <div class="books__header">
+                        
+                            <h2 class="section__title books__header__title">All<span class="purple"> Books</span></h2>
+             
+                        <select id="filter" onchange="filterBooks(event)">
+                            <option value="" disabled selected>Sort</option>
+                            <option value="HIGH_TO_LOW">Price, high to low</option>
+                            <option value="LOW_TO_HIGH">Price, low to high</option>
+                            <option value="RATING">Rating</option>
+                        </select>
+                    </div>
+                        <div class="books">
+                            <i class="fas fa-spinner books__loading--spinner"></i>
                         </div>
                         
                         

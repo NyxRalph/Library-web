@@ -14,6 +14,7 @@ nav{
     justify-content: center;
    
 }
+
 .nav__container{
     width: 100%;
     max-width: 1200px;
@@ -136,9 +137,9 @@ LANDING
 */
 #landing{
     background-color: rgba(115, 66, 214, 0.1);
-    height: 101vh;
+    
 }
-h1{
+h2{
     font-size: 50px;
 }
 
@@ -157,9 +158,9 @@ body {
     align-items: center;
     justify-content: center;
 }
-.container{
-    max-width: 1000px;
-}
+/* .container{
+    max-width: 1200px;
+} */
 .book{
     padding: 24px;
     width: 25%;
@@ -199,6 +200,26 @@ body {
     position: relative;
     top: 15vh;
 }
+.books__header{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0px 24px;
+    padding-top: 1vh;
+    max-width: 1000px;
+    width: 100%;
+    margin: 0 auto;
+    z-index: 2;
+}
+.books{
+    display: flex;
+    flex-wrap: wrap;
+    max-width: 1200px;
+    width: 100%;
+    padding:70px 0px 120px 0px;
+    min-height: 101vh;
+    
+}
 
 
 
@@ -223,6 +244,8 @@ footer{
     display: flex;
     align-items: center;
     justify-content: center;
+   
+
 }
 .footer__logo--img{
     width: 100px;
@@ -247,8 +270,45 @@ footer{
 .footer__link{
     padding: 0px 8px;
 }
+.row{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.books__loading{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 60px;
+    color: #7342d6;
+    position: relative;
+    bottom: 250px;
+}
+.books__loading--spinner{
+    display: none !important;
+}
+.books__loading .books__loading--spinner{
+    display: block !important;
+}
 
 
+.fa-spinner{
+    animation: rotate 600ms infinite linear;
+   
+}
+
+
+
+
+
+@keyframes rotate{
+    0%{
+        transform : rotate(0);
+    }
+    100%{
+        transform : rotate(360deg)
+    }
+}
 
 
 
